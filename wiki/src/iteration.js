@@ -1,9 +1,8 @@
 import Sidebar from "./sidebar";
 import React from "react";
 import Highlight from "react-highlight";
-import Coderun from "./coderun";
 import "./style.css"
-
+import { Link } from "react-router-dom";
 
 
 function Iteration(){
@@ -36,7 +35,8 @@ function Iteration(){
             }
         </Highlight>
         
-        <Coderun code={'for i in range(5):\n    if i % 2 == 0:\n        print(i)'}></Coderun>
+        <Link to="/sandbox" state={{data:'for i in range(5):\n   print(i)'}} className="trybtn">try!</Link>
+
 
         </div>
         <Sidebar></Sidebar>
