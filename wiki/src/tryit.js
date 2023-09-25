@@ -28,11 +28,11 @@ function Tryit(props) {
 
     const handleKeyDown = (event) => { //this function was pillaged online and allows users to press tab in a text area 
         if (event.key == 'Tab') {
-            event.preventDefault(); 
+            event.preventDefault();
             var start = event.target.selectionStart;
             var end = event.target.selectionEnd;
-            event.target.value = event.target.value.substring(0, start) + '\t' + event.target.value.substring(end);
-            event.target.selectionStart = event.target.selectionEnd = start + 1;
+            event.target.value = event.target.value.substring(0, start) + '    ' + event.target.value.substring(end);
+            event.target.selectionStart = event.target.selectionEnd = start + 4;
         }
     }
 
