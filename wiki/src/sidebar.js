@@ -5,7 +5,8 @@ function Sidebar() {
         <div className="test">
             <Link to="/">home</Link>
             <Link to="/iteration">iteration</Link>
-            <a href="#">comments</a>
+            <Link to="/comments">comments</Link>
+            <Link to="/variables">variables</Link>
         </div>
     )
 }

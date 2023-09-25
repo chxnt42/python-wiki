@@ -3,6 +3,8 @@ import Sidebar from './sidebar';
 import Home from './home';
 import Iteration from './iteration';
 import Tryit from './tryit';
+import Comments from './comments';
+import Variables from './Variables';
 import "./style.css"
 import "/node_modules/highlight.js/styles/atom-one-light.css"
 
@@ -17,6 +19,8 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path='iteration' element={<Iteration></Iteration>}></Route>
         <Route path="sandbox" element={<Tryit></Tryit>}></Route>
+        <Route path="comments" element={<Comments></Comments>}></Route>
+        <Route path="variables" element={<Variables></Variables>}></Route>
       </Routes>
 
     </>
