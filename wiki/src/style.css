@@ -67,6 +67,10 @@ body {
     margin-bottom: 10px;
 }
 
+.main h3{
+    margin: 10px 0;
+}
+
 .main ul {
     margin: 20px 0px 20px;
     margin-left: 40px;

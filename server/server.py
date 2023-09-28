@@ -28,7 +28,11 @@ def test():
     data = request.data
     code = json.loads(data)["code"]
     log.start()
-    exec(code)
+    try:
+        exec(code)
+    except:
+        log.stop()
+        return {"res":["ERROR"]}
     log.stop()
     return {"res":log.messages}
 

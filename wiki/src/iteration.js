@@ -30,6 +30,13 @@ function Iteration() {
 
 
                 <CodeSnippet CodeStr={'for i in range(5):\n   print(i)'}></CodeSnippet>
+                <p>the previous example uses indexing however there is another way to loop through a list like this : </p>
+                <CodeSnippet CodeStr={'MyList = [1,2,3,4,5,6,7,8,9,10]\nfor num in MyList:\n    print(num)'}></CodeSnippet>
+
+                <p>however the previous example has a flaw being you cant keep track of the index enumeration solves this problem as shown below</p>
+                <CodeSnippet CodeStr={'MyList = [2,4,6,8,10,12,14]\nfor index,num in enumerate(MyList):\n    print(index,num)'}></CodeSnippet>
+                <p>using enumerate return both the element and the index completely avoiding having to use indexes </p>
+                
 
 
 

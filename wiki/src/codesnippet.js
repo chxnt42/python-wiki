@@ -14,7 +14,6 @@ export default function CodeSnippet({ CodeStr }) {
 
                 <Link to="/sandbox" state={{ data: CodeStr }} className="trybtn">try!</Link>
             </div>
-
         </>
     )
 }
